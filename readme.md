@@ -28,15 +28,17 @@ The fine-tuning process utilizes OpenAI's API and a structured dataset to tailor
 
 ## Project Structure
 
-├── .env # Stores API keys and other environment variables (DO NOT COMMIT)
-├── .gitignore # Specifies intentionally untracked files by Git
+```text
+.
+├── .env                  # Stores API keys and other environment variables (DO NOT COMMIT)
+├── .gitignore            # Specifies intentionally untracked files by Git
 ├── medical_o1_sft_mix.json # Original input data in JSON format
-├── medical_train.jsonl # Formatted training data for OpenAI fine-tuning
-├── medical_valid.jsonl # Formatted validation data for OpenAI fine-tuning (optional)
-├── prepare_data.py # Python script to convert input JSON to JSONL format
-├── run_finetuning.py # Python script to manage the fine-tuning job with OpenAI
+├── medical_train.jsonl   # Formatted training data for OpenAI fine-tuning
+├── medical_valid.jsonl   # Formatted validation data for OpenAI fine-tuning (optional)
+├── prepare_data.py       # Python script to convert input JSON to JSONL format
+├── run_finetuning.py     # Python script to manage the fine-tuning job with OpenAI
 ├── fine_tuned_model_id.txt # Stores the ID of the successfully fine-tuned model (generated after run)
-└── README.md # This file: project documentation
+└── README.md             # This file: project documentation
 ```
 
 ## Setup and Installation
